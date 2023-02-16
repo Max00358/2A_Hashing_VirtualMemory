@@ -1,4 +1,4 @@
-In this project, you will implement a hash table data structure to emulate virtual memory. 
+In this project, you will implement a hash table data structure to emulate virtual memory
 
 Understanding Virtual Memory
 
