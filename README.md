@@ -7,3 +7,48 @@ You will likely want to create a class that represents a process. This should co
 In this project, memory will be represented by an array of integers of size N. Pages are contiguous blocks of memory within this array of size P. The size of the hash table then is 𝑚 = 𝑁. For this project, N and P are chosen in such a way that m is
 𝑃
 an integer power of 2 and N is an integer multiple of P. You may assume that virtual pointers for all processes begin at virtual address 0 and end at P-1. When all 𝑚 blocks are allocated, the hash table is said to be “full”.
+
+Sample Input 1:
+```
+OPEN
+M 64 8
+INSERT 3234234
+SEARCH 3234234
+SEARCH 12321
+WRITE 3234234 1 50
+READ 3234234 1
+END
+```
+Sample Output 1:
+```
+success
+success
+found 3234234 in 2
+not found
+success
+1 50
+```
+Sample Input 2:
+```
+ORDERED
+M 16 8
+INSERT 2
+INSERT 10
+SEARCH 10
+WRITE 2 0 129
+READ 2 0
+INSERT 3
+PRINT 1
+PRINT 0
+END
+```
+Sample Output 2:
+```
+success
+success
+failure
+success
+not found
+failure 
+failure
+```
